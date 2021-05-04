@@ -1,0 +1,195 @@
+/*==============================================================
+Colors Css
+==============================================================*/
+
+$dark-color: #000;
+$primary-color: #ffe001;
+$pure-color: #fff;
+
+/*==============================================================
+Common Css
+==============================================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Devonshire", cursive;
+  font-family: "Fredericka the Great", cursive;
+  font-family: "Montserrat", sans-serif;
+  height: 5000px;
+  overflow-x: hidden;
+}
+
+/*==============================================================
+Fonts Css
+==============================================================*/
+
+h1 {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 90px;
+  color: $dark-color;
+}
+
+h2 {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 50px;
+  color: $dark-color;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  color: $dark-color;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: $dark-color;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: $dark-color;
+  line-height: 30px;
+}
+
+a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: $dark-color;
+  text-decoration: none;
+
+  &:hover {
+    color: #000;
+    text-decoration: none;
+  }
+}
+
+%button {
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  transition: 0.3s ease all;
+
+  &:hover {
+    background-color: white;
+  }
+
+  &:hover a {
+    color: black;
+  }
+
+  a {
+    color: white;
+  }
+}
+
+%button-second {
+  background-color: $primary-color;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 10px 10px;
+  border: none;
+  transition: 0.3s ease all;
+
+  &:hover {
+    background-color: black;
+  }
+
+  &:hover a {
+    color: $primary-color;
+  }
+
+  a {
+    color: white;
+  }
+}
+
+/*==============================================================
+Nav Css
+==============================================================*/
+
+nav {
+  z-index: 11;
+}
+
+/*==============================================================
+Header Css
+==============================================================*/
+
+header {
+  background: url(../img/hero-bg.png);
+  width: 100%;
+  height: fit-content;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  margin-top: -350px;
+  position: relative;
+
+  img {
+    margin-top: 220px;
+  }
+
+  .right {
+    height: 125vh;
+    margin-top: 120px;
+    width: auto;
+    h2 {
+      font-family: "Devonshire", cursive;
+    }
+
+    .sub {
+      border-bottom: 2px solid black;
+      padding-bottom: 40px;
+    }
+
+    .math {
+      h3 {
+        font-family: "Fredericka the Great", cursive;
+      }
+    }
+    .button {
+      @extend %button;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      margin-top: 40px;
+    }
+  }
+}
+
+.spegeti {
+  position: absolute;
+  bottom: -220px;
+  left: -30px;
+}
+
+/*==============================================================
+Choose and enjoy Css
+==============================================================*/
+
+.choosenenjoy {
+  padding: 100px;
+  .button-second {
+    @extend %button-second;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .food-img {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
