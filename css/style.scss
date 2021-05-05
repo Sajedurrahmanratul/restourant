@@ -193,3 +193,31 @@ Choose and enjoy Css
     transform: translateX(-50%);
   }
 }
+
+/*==============================================================
+Find Table Css
+==============================================================*/
+
+.book-table {
+  padding: 100px 0;
+  .button-table {
+    background-color: $primary-color;
+    text-decoration: none;
+    color: $pure-color;
+    padding: 17px 10px;
+    border: none;
+    transition: 0.3s ease all;
+
+    &:hover {
+      background-color: $dark-color;
+    }
+
+    &:hover a {
+      color: $primary-color;
+    }
+
+    a {
+      color: rgb(0, 0, 0);
+    }
+  }
+}
